@@ -123,6 +123,8 @@ COSPLAY = (
     "https://telegra.ph/file/b7340cfda5e369b03df17.jpg",
     "https://telegra.ph/file/40b6205209bbe052c30ed.jpg",
     "https://telegra.ph/file/003827e9bf30f600c133c.jpg",
+    "https://telegra.ph/file/d95c170a0bb42f28f55fa.jpg",
+    "https://telegra.ph/file/3347ff752fc1e99ed4f97.jpg",
     "https://telegra.ph/file/0b286c405bf999f858850.jpg",
     "https://telegra.ph/file/1c1e990e233d6f90b0298.jpg",
     "https://telegra.ph/file/2dd5ba58116101260b6f8.jpg",
