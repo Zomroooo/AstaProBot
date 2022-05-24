@@ -1019,7 +1019,7 @@ def waifu(update, context):
                 photo=image, caption= f"*A waifu appeared!*\nAdd them to your harem by sending /protecc character name",
                 parse_mode=ParseMode.MARKDOWN,
             )
-            REDIS.sadd(f"waifus{user.id}", char_name)
+            REDIS.sadd(f"waifus{update.effective_chat.id}", char_name)
         else:
             update.effective_message.reply_text(
                 "Oops Waifu Ran Away",
@@ -1045,11 +1045,11 @@ def protecc(update, context):
     if json:
         json = json["data"]["Character"]
         char_name = f"{json.get('name').get('full')}"
-        WAIFUS = list(REDIS.sunion(f"waifus{user.id}"))
+        WAIFUS = list(REDIS.sunion(f"waifus{update.effective_chat.id}"))
         if char_name in WAIFUS:
             REDIS.sadd(f"anime_waifu{user.id}", char_name)
             update.effective_message.reply_text(f"OwO you protecc'd {char_name}. This waifu has been added to your harem.")
-            REDIS.srem(f"waifus{user.id}", char_name)
+            REDIS.srem(f"waifus{update.effective_chat.id}", char_name)
         else:
             update.effective_message.reply_text("rip, that's not quite right...")
 
