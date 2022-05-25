@@ -9,19 +9,19 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-  ────「 sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ 」────
-  *ʜᴇʟʟᴏ!! {}-ᴋᴜɴ ❤️*   
-  ♡ ɪ'ᴍ sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴘᴏᴡᴇʀғᴜʟ ʀᴏʙᴏᴛ [✨](https://telegra.ph/file/efe659ac340a0b4208dc4.mp4)
+  ────「 [sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ](https://telegra.ph/file/271e1ef391ad4036e7a4b.mp4)」────
+  やあ Kon'ichiwa {} - San!   
+  ♡ I'm Shikimori Micchon An Anime Themed Powerful & Advanced Group Management Robot 
   ───────────────────────
-  ♡  *sᴇʀᴠᴇʀ ᴜᴘᴛɪᴍᴇ:* `{}`             
-  ♡  `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss* `{}` *ᴄʜᴀᴛs.*  
+  ♡  Server Uptime :- `{}`             
+  ♡  `{}` Users, Across `{}` Chats.  
   ───────────────────────
-  ♡ ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ sᴇᴇ ᴍʏ ғᴇᴀᴛᴜʀᴇs.
+  ♡ Try The Help Buttons Below To Know My Abilities ♡
    
 group_start_text: |
-  *💖 ʏᴏɪɪ!! ɪ'ᴍ sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ! ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴍᴀɴɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀʟʟ ᴏғ ʏᴏᴜʀ ʟᴏᴠᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ*[💕](https://telegra.ph/file/8bddb266c82258ff0a41b.mp4)
+  ♡♡ やあ Kon'ichiwa Minna-San, Am Shikimori Micchan and I'll protect you from everything [♡♡](https://telegra.ph/file/271e1ef391ad4036e7a4b.mp4)
   
-  *ᴀᴄᴛɪᴠᴇ sɪɴᴄᴇ :* `{}`
+  Am Alive Since :- `{}`
 
 pm_about_text: |
   ♥ Hey Darling I'm *Shikimori Micchon*, a powerful group management bot built to help you manage your group easily. ♥ 
@@ -66,7 +66,7 @@ pm_help_text: |
   If You Face Any Problems Please Report It To Our Support Group.
 pm_help_module_text: |
   [*♥ Click on the button bellow to get description about specifics command. ♥*
-  If You Face Any Problems Please Report It To Our Support Group.](https://t.me/jinwooXsupport) 
+  If You Face Any Problems Please Report It To Our Support Group.](https://t.me/shikimoriXsupport) 
   
 # Group Help Text
 group_help_text: "Contact me in PM to get the list of possible commands."
