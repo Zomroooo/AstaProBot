@@ -225,7 +225,6 @@ DEV_USERS.add(2070119160)
 DEV_USERS.add(CYRUS_ID)
 DEV_USERS.add(945137470)
 DEV_USERS.add(5099853374)
-
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
 try:
@@ -248,8 +247,6 @@ finally:
         "[NAMI]: Connection To The Shasa • Data Center • Mumbai • Redis Database Established Successfully!"
     )
 
-
-
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("SpamWatch API key missing! recheck your config")
@@ -271,8 +268,6 @@ aiohttpsession = ClientSession()
 # ARQ Client
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-
-
 
 pbot = Client(
     ":memory:",
