@@ -35,7 +35,6 @@ from SiestaRobot.utils.pluginhelper import convert_seconds_to_minutes as time_co
 from SiestaRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
 from SiestaRobot.services.types import InlineQueryResultCachedDocument
 from SiestaRobot.modules.info import get_chat_info, get_user_info
-from SiestaRobot.utils.functions import test_speedtest
 from SiestaRobot.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = EVENT_LOGS
