@@ -83,6 +83,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+SAITAMA_IMG = "https://telegra.ph/file/c21c417e9493dd82f5aa9.jpg"
 SIESTA_IMG = "https://telegra.ph/file/6d3e3ef24f64fb6e35df0.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -194,11 +195,10 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 SAITAMA_IMG,
-                PM_START_TEXT.format(
+                pm_start_text.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name),
                 ),
                 parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
