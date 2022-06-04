@@ -93,3 +93,10 @@ async def quotess(qotli):
                                               [msg.id, response.id])
     except TimeoutError:
         await qotli.edit()
+
+__help__ = """
+  ──「 SANGMATA 」──
+
+• `/sg`*:* to gather info of users previous names 
+• `/quotly`*:* to convert text to stic"""
+__mod_name__ = "sangmata"        
