@@ -449,5 +449,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
         elif query.data == "rmbgsticker":
             await removebg_sticker(client, query.message)
 
+__help__ = """
+  ──「 IMG EDITOR 」──
 
+• `/edit`*:* reply to any image to edit it ....
+The pannel will appear once you use this command
+"""
 __mod_name__ = "Img Editor​"
