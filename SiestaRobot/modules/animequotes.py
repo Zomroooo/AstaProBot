@@ -161,6 +161,14 @@ QUOTES_IMG = (
       
       )    
 
+__help__ = """
+  ──「 ANIMEQUOTES 」──
+
+• `/quote`*:* for quotes
+• `/animequotes`*:* for anime quotes"""
+__mod_name__ = "「animequotes」"
+
+
 ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes, run_async=True)
 QUOTES_HANDLER = DisableAbleCommandHandler("quote", quotes, run_async=True)
 
