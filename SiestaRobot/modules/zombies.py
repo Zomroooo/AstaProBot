@@ -96,4 +96,11 @@ async def rm_deletedacc(show):
         )
     await memek.edit(del_status)
 
+__help__ = """
+  ──「 ZOMBIES 」──
+  
+• /zombies : to get quick search of deleted accounts in gc.
+• /zombies clean : to clean all the deleted accounts from gc..\n
+  Using /zombies clean won't kick the deleted accounts who had an admin presence!
+"""
 __mod_name__ = "Zombies"
