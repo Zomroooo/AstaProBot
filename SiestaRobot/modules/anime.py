@@ -575,6 +575,21 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
+__help__ = """
+  ──「 ANIME 」──
+
+• `/anime <anime>`*:* returns information about the anime from AniList.
+• `/character <character>`*:* returns information about the character from AniList.
+• `/manga <manga>`*:* returns information about the manga from AniList.
+• `/upcoming`*:* returns a list of new anime in the upcoming seasons from AniList.
+• `/airing <anime>`*:* returns anime airing info from AniList.
+• `/mupcoming`*:* returns a list of new anime in the upcoming seasons from MAL.
+• `/user <user>`*:* returns information about a MyAnimeList user.
+• `/aq`*:* sends random anime quotes.
+• `/kayo`*:* search an Anime on AnimeKayo website.
+• `/fcl`*:* Check your favourite characters
+• `/kaizoku`*:* search an Anime on AnimeKaizoku website.
+ """
 __mod_name__ = "Anime"
 __command_list__ = [
     "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
