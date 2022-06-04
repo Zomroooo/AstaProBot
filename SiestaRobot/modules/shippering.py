@@ -72,6 +72,9 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
     except Exception as e:
         print(e)
         await message.reply_text(e)
-
-
+        
+__help__ = """
+  ──「 SHIPPERING 」──
+  
+• /couples : Choose two people from group to mate.
 __mod_name__ = "Couples"
