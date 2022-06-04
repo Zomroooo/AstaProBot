@@ -32,7 +32,7 @@ async def repo(_, message):
         photo=MEMEK,
         caption=f"""✨ **Hey I'm Siesta Robot** ✨ 
 
-**Owner repo : [Vain](https://t.me/saint_foire)**
+**Owner repo : [Zoro](https://t.me/Aceladi)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -44,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/shiinobu/SiestaRobot"), 
+                        "Repo", url="https://t.me/Aceladi"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/machinaxsupport")
+                        "Support", url="https://t.me/NexusXSupport")
                 ]
             ]
         )
