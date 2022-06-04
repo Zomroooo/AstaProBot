@@ -130,3 +130,6 @@ SED_HANDLER = DisableAbleMessageHandler(
 )
 
 dispatcher.add_handler(SED_HANDLER)
+__mod_name__ = "Shell"
+__command_list__ = ["sh"]
+__handlers__ = [SHELL_HANDLER]
