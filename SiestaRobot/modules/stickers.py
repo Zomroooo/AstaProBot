@@ -579,7 +579,19 @@ def delsticker(update, context):
 def helps(chat):
     return gs(chat, "stickers_help")
 
+__help__ = """
+  ──「 STICKERS 」──
 
+•  `/stickerid`*:* reply to a sticker to me to tell you its file ID.
+•  `/getsticker`*:* reply to a sticker to me to upload its raw PNG file.
+•  `/getvidsticker` *:* reply to a video sticker to me to upload it's mp4 file.
+•  `/kang`*:* reply to a sticker/video sticker/animated sticker to add it to your pack.
+•  `/delsticker`*:* Reply to your anime exist sticker to your pack to delete it.
+•  `/stickers`*:* Find stickers for given term on combot sticker catalogue 
+•  `/getvideo`*:* reply to a gif to get video easily !
+Please Use 512/512 size Sticker to kang else it will cause internal problem.
+And sometimes video sticker might not kang because of more Size than 512/512.
+"""
 __mod_name__ = "Stickers"
 
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)
