@@ -66,3 +66,9 @@ async def _(fry):
                     [msg.id, response.id, r.id, msg_level.id])
     await kntl.delete()
     return os.remove(downloaded_file_name)
+
+__help__ = """
+  ──「 DEEPFRY 」──
+
+• `/deepfry`*:* reply to any sticker ko deepfry it"""
+__mod_name__ = "deepfry"
