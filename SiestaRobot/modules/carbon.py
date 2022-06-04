@@ -30,13 +30,15 @@ MEMEK = "https://telegra.ph/file/31c56fb53884915fec558.jpg"
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Siesta Robot** ✨ 
+        caption=f"""✨ **Hey I'm Kaguya** ✨ 
 
-**Owner repo : [Zoro](https://t.me/Aceladi)**
-**Python Version :** `{y()}`
-**Library Version :** `{o}`
-**Telethon Version :** `{s}`
-**Pyrogram Version :** `{z}`
+**Oᴡɴᴇʀ ʀᴇᴘᴏ : [ᴄʜᴇʀʀʏ-ᴋᴜɴ](https://t.me/Aceladi)**
+╔═══════════════╗
+┣× ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ
+┣× ᴏᴡɴᴇʀ ɪs ʜᴀʀᴀᴍɪ 
+┣× ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ɪᴛ 
+┣× sᴏ ᴋɪɴᴅʟʏ ғᴜᴄᴋ ᴏғғ
+╚═══════════════╝
 
 **Create your own with click button bellow.**
 """,
