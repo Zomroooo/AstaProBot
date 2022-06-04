@@ -179,3 +179,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+__help__ = """
+  ──「 UPLOAD 」──
+      
+• `/up`*:* to upload files or media
+• `/tmpninja`*:* to upload file to tmp 
+• `/transfersh`*:* to upload file to transfersh
+• `/tgt`*:* reply to a message to get instant link
+• `/tgm`*:* reply to any media to get instant Telegraph upload link
+"""
+__mod_name__ = "upload"
