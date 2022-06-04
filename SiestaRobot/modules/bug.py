@@ -128,5 +128,8 @@ async def close_send_photo(_, CallbackQuery):
     else:
         await CallbackQuery.message.delete()
         
+__help__ ="""
+  ──「 BUG 」──
 
+• `/bug`*:* <bug name> will report the bug to our support staff"""
 __mod_name__ = "Bug"
