@@ -5,8 +5,8 @@ def helps(chat):
     return gs(chat, "tools_help")
 
 __help__ = """
-
   ──「 ZOMBIES 」──
+  
  • /tgm :Get Telegraph Link Of Replied Media
  • /tgt :Get Telegraph Link of Replied Text
 *Chatbot* 
