@@ -44,4 +44,8 @@ def eliminate_channel(update: Update, context: CallbackContext):
 def helps(chat):
     return gs(chat, "antichannel_help")
 
+__help__ = """
+  ──「 ANITCHANNELMODE 」──
+
+• `/antichannelmode`*:* on/off use this command for disabling channel channels from group"""
 __mod_name__ = "Anti-Channel"
