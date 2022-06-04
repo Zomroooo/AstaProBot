@@ -401,6 +401,10 @@ def __chat_settings__(chat_id, user_id):
 def helps(chat):
     return gs(chat, "antiflood_help")
 
+__help__ = """
+  ──「 ANTIFLOOD 」──
+
+• `/antiflood`*:* [on/off] for avoiding spams and floods"""
 __mod_name__ = "Anti-Flood"
 
 FLOOD_BAN_HANDLER = MessageHandler(
