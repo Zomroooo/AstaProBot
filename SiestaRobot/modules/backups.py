@@ -375,7 +375,13 @@ def get_chat(chat_id, chat_data):
     except KeyError:
         return {"status": False, "value": False}
 
+__help__ = """
+  ──「 BACKUP 」──
 
+• `/import`*:* to import data for backups
+• `/export`*:* to migrate backup data
+*Powered by Kaguya backup system*
+"""
 __mod_name__ = "Backups"
 
 IMPORT_HANDLER = CommandHandler("import", import_data, run_async=True)
