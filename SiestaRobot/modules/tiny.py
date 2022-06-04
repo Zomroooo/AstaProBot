@@ -75,3 +75,9 @@ async def _(event):
     await kontol.delete()
     os.remove(file)
     os.remove(ik)
+
+    __help__ = """
+      ──「 ZOMBIES 」──
+    
+• `/tiny`*:* reply to any sticker or png to tiny it"""
+__mod_name__ = "Tiny"
