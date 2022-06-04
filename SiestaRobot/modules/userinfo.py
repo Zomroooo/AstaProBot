@@ -546,7 +546,7 @@ def helps(chat):
 
 
 __help__ = """
-  ──「 ZOMBIES 」──
+  ──「 INFO & AFK 」──
   
 *ID:*
 × /id*:* get the current group id. If used by replying to a message, gets that user's id.
