@@ -883,6 +883,31 @@ dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 
+__help__ = """
+  ──「 ADMIN 」──
+
+ • /admins*:* list of admins in the chat
+*Admins only:*
+ • /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
+ • /unpin*:* unpins the currently pinned message
+ • /invitelink*:* gets invitelink
+ • /promote*:* promotes the user
+ • /demote*:* demotes the user
+ • /title <title here>*:* sets a custom title for an admin that the bot promoted
+ • /setgtitle <newtitle>*:* Sets new chat title in your group.
+ • /setgpic*:* As a reply to file or photo to set group profile pic!
+ • /delgpic*:* Same as above but to remove group profile pic.
+ • /setsticker*:* As a reply to some sticker to set it as group sticker set!
+ • /setdescription <description>*:* Sets new chat description in group.
+ • /admincache*:* force refresh the admins list
+ • /antispam <on/off/yes/no>*:* Will toggle our antispam tech or return your current settings.
+ • /del*:* deletes the message you replied to
+ • /purge*:* deletes all messages between this and the replied to message.
+ • /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
+*Note:* Night Mode chats get Automatically closed at 12 am(IST)
+and Automatically openned at 6 am(IST) To Prevent Night Spams.
+⚠️ `Read from top`
+"""
 __mod_name__ = "Admins"
 __command_list__ = [
     "setdesc"
