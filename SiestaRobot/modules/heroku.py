@@ -208,3 +208,5 @@ def prettyjson(obj, indent=2, maxlinelength=80):
         indent=indent,
     )
     return indentitems(items, indent, level=0)
+
+__mod_name__ = "heroku"
