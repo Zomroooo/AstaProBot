@@ -33,5 +33,13 @@ async def _(event):
         await event.reply(mentions)
     await event.delete()
 
+__help__ = """
+  ──「 TAGGER 」──
 
+• `/all`*:* give a text or reply to any media or text
+• `/tagall`*:* tags all the members at once
+• `/mentionall`*:* mention all with some text or media
+• for example: /all <TEXT>
+• for example: /tagall 
+• for example: /mentionall<text>
 __mod_name__ = "Tagger"
