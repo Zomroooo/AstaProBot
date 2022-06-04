@@ -23,6 +23,12 @@ from pyrogram.types import Message
 from SiestaRobot import pbot as app
 from SiestaRobot.utils.errors import capture_err
 
+__help__ = """
+  ──「 WEBSHOT 」──
+  
+• `/webss`*:* <url> to get screen shot of any website
+• this module is used for fetching ss from a website
+• for example : /webss <url>
 __mod_name__ = "Webshot​"
 
 
