@@ -229,8 +229,7 @@ def start(update: Update, context: CallbackContext):
                                 url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
-                                text="Help",
-                                url="t.me//MishaXRobot?start=help",
+                                text="Help", callback_data="help_.*",
                             ),
                         ],
                         [
