@@ -41,5 +41,5 @@ __help__ = """
 • `/mentionall`*:* mention all with some text or media
 • for example: /all <TEXT>
 • for example: /tagall 
-• for example: /mentionall<text>
+• for example: /mentionall<text>. """
 __mod_name__ = "Tagger"
