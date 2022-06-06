@@ -10,7 +10,18 @@ from SiestaRobot.modules.helper_funcs.extraction import extract_user
 from SiestaRobot.modules.language import gs
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
+
 from telegram.ext import CallbackContext
+
+from telegram import Message, Chat, Update, Bot, MessageEntity
+
+from telegram.ext import CallbackContext, run_async, Filters
+
+from telegram.utils.helpers import escape_markdown
+
+from SiestaRobot import DRAGONS, DEMONS
+
+from SiestaRobot.modules.helper_funcs.alternate import typing_action
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
@@ -316,6 +327,71 @@ def weebify(update: Update, context: CallbackContext):
 def helps(chat):
     return gs(chat, "fun_help")
 
+
+def gbam(update, context):
+    user = update.effective_user
+    chat = update.effective_chat
+    bot, args = context.bot, context.args
+    message = update.effective_message
+
+    curr_user = html.escape(message.from_user.first_name)
+    user_id = extract_user(message, args)
+
+    if user_id:
+        gbam_user = bot.get_chat(user_id)
+        user1 = curr_user
+        user2 = html.escape(gbam_user.first_name)
+
+    else:
+        user1 = curr_user
+        user2 = bot.first_name
+
+    if update.effective_message.chat.type == "private":
+        return
+    if int(user.id) in DRAGONS or int(user.id) in DEMONS:
+        gbamm = fun_strings.GBAM
+        reason = random.choice(fun_strings.GBAM_REASON)
+        gbam = gbamm.format(user1=user1, user2=user2, chatid=chat.id, reason=reason)
+        context.bot.sendMessage(chat.id, gbam, parse_mode=ParseMode.HTML)
+
+
+def flirt(update: Update, context: CallbackContext):
+    reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
+    reply_text(random.choice(fun_strings.FLIRT_TEXT))
+
+
+def oreki(update: Update, context: CallbackContext):
+    reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
+    reply_text(random.choice(fun_strings.OREKI_TEXT))
+
+
+@typing_action
+def abuse(update, context):
+    # reply to correct message
+    reply_text = (
+        update.effective_message.reply_to_message.reply_text
+        if update.effective_message.reply_to_message
+        else update.effective_message.reply_text
+    )
+    reply_text(random.choice(fun_strings.ABUSE_STRINGS))
+
+
+@typing_action
+def goodnight(update, context):
+    message = update.effective_message
+    first_name = update.effective_user.first_name
+    reply = f"Oyasumi! {escape_markdown(first_name)}" 
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+
+
+@typing_action
+def goodmorning(update, context):
+    message = update.effective_message
+    first_name = update.effective_user.first_name
+    reply = f"ohayo! {escape_markdown(first_name)}"
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+
+
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize, run_async=True)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs, run_async=True)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap, run_async=True)
@@ -330,6 +406,14 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball, run_async=True
 TABLE_HANDLER = DisableAbleCommandHandler("table", table, run_async=True)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout, run_async=True)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
+GBAM_HANDLER = DisableAbleCommandHandler("gbam", gbam, run_async=True)
+FLIRT_HANDLER = DisableAbleCommandHandler("flirt", flirt, run_async=True)
+OREKI_HANDLER = DisableAbleCommandHandler("oreki", oreki, run_async=True)
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse, pass_args=True, run_async=True)
+GDNIGHT_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(goodnight|goodnight)"), goodnight, friendly="goodnight", run_async=True
+)
+GDMORNING_HANDLER = DisableAbleMessageHandler(Filters.regex(r"(?i)(goodmorning|good morning)"), goodmorning, friendly="goodmorning", run_async=True)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
@@ -345,6 +429,12 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(GBAM_HANDLER)
+dispatcher.add_handler(FLIRT_HANDLER)
+dispatcher.add_handler(OREKI_HANDLER)
+dispatcher.add_handler(ABUSE_HANDLER)
+dispatcher.add_handler(GDNIGHT_HANDLER)
+dispatcher.add_handler(GDMORNING_HANDLER)
 
 __mod_name__ = "Fun"
 __command_list__ = [
@@ -361,7 +451,10 @@ __command_list__ = [
     "sanitize",
     "shout",
     "weebify",
+    "gbam",
     "8ball",
+    "flirt",
+    "Abuse",
 ]
 __handlers__ = [
     RUNS_HANDLER,
@@ -378,4 +471,10 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
+    GBAM_HANDLER,
+    FLIRT_HANDLER,
+    OREKI_HANDLER,
+    ABUSE_HANDLER,
+    GDNIGHT_HANDLER,
+    GDMORNING_HANDLER,
 ]
