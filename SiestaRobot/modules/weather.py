@@ -88,11 +88,12 @@ async def _(event):
         with io.BytesIO(response_api) as out_file:
             await event.reply(file=out_file)
             
- __help__ = """
-  ──「 WEATHER 」──
-  
-• `/weather`*:* <region> for weather, location, temperature,etc.
+__help__ = """
+× `/weather`*:* <region> for weather, location, temperature,etc.
 
 
-• for example: /weather<region> for results."""
+× for example: /weather<region> for results
+
+
+       *Powered by sin union *"""
 __mod_name__ = "weather"
