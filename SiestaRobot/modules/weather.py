@@ -94,6 +94,5 @@ async def _(event):
 • `/weather`*:* <region> for weather, location, temperature,etc.
 
 
-• for example: /weather<region> for results
-"""
+• for example: /weather<region> for results."""
 __mod_name__ = "weather"
