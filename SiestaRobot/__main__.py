@@ -1,5 +1,4 @@
-*Stdout*
-`import time
+import time
 import requests
 import git
 import importlib
