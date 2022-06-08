@@ -243,44 +243,45 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourselflog
             elif new_mem.id == bot.id:
                 creator = None
-                for x in bot.get_chat_administrators(update.effective_chat.id):
-                    if x.status == "creator":
-                        creator = x.user
-                        break
-                if creator:
-                    bot.send_message(
-                        JOIN_LOGGER,
-                        f"""
-                        \\#NEWGROUP \
-                        \nGroup Name:   **\\{chat.title}** \
-                        \nID:   `\\{chat.id}` \
-                        \nCreator ID:   `\\{creator.id}` \
-                        \nCreator Username:   \@{creator.username} \
-                        """,
-                        parse_mode=ParseMode.MARKDOWN_V2,
-                    )
-                else:
-                    bot.send_message(
-                        JOIN_LOGGER,
-                        "#NEW_GROUP\n<b>Group name:</b> {}\n<b>ID:</b> <code>{}</code>".format(
-                            html.escape(chat.title),
-                            chat.id,
-                        ),
-                        parse_mode=ParseMode.HTML,
-                    )
+                update.effective_message.reply_photo(
+                    WAIFUS_IMG, caption= "Hey {}, I'm {}! Thank You For Adding Me To {}\n"
+                    "Check Out Our Support Channel And Network From The Buttons Below!".format(
+                        user.first_name, context.bot.first_name, chat.title
+                    ),
+            
+            
+                    reply_to_message_id=reply,
+                parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="Support",
+                             url=f"https://t.me/NexusXSupport"),
+                       InlineKeyboardButton(
+                             text="Hellsing",
+                             url="https://t.me/HellsingNetwork")
+                     ],
+                     [                  
+                       InlineKeyboardButton(
+                             text="Help",
+                             callback_data="help_back"),
+                ] 
+            ]
+        ),
+    )
+                continue
 
-            buttons = sql.get_welc_buttons(chat.id)
-            keyb = build_keyboard(buttons)
+            else:
+                buttons = sql.get_welc_buttons(chat.id)
+                keyb = build_keyboard(buttons)
 
-            if welc_type not in (sql.Types.TEXT, sql.Types.BUTTON_TEXT):
-                media_wel = True
+                if welc_type not in (sql.Types.TEXT, sql.Types.BUTTON_TEXT):
+                    media_wel = True
 
-            first_name = (
-                new_mem.first_name or "PersonWithNoName"
-            )  # edge case of empty name - occurs for some bugs.
-
-            if MessageHandlerChecker.check_user(update.effective_user.id):
-                return
+                first_name = (
+                    new_mem.first_name or "PersonWithNoName"
+                )  # edge case of empty name - occurs for some bugs.
 
             if cust_welcome:
                 if "%%%" in cust_welcome:
