@@ -84,7 +84,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
   ────「 кαgυуα ѕнιиσмιуα 」────
   [やあ]({}) Kon'ichiwa {} - San!   
-  I'm ᴋᴀɢᴜʏᴀ An Anime Themed Powerful & Advanced Group Management Robot 
+  I'm Kaguya An Anime Themed Powerful & Advanced Group Management Robot 
   ───────────────────────
   ◈  Server Uptime :- `{}`             
   ◈  `{}` Users, Across `{}` Chats.  
