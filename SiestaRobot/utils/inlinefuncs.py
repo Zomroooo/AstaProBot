@@ -26,7 +26,6 @@ from SiestaRobot import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
-    ubot2,
 )
 from SiestaRobot import pbot as app 
 from SiestaRobot import arq
