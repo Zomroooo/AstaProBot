@@ -43,7 +43,7 @@ def chat_join_req(upd: Update, ctx: CallbackContext):
     )
 
 
-@mikucallback(pattern=r"cb_approve=")
+@siestacallback(pattern=r"cb_approve=")
 @user_admin(AdminPerms.CAN_INVITE_USERS, noreply=True)
 @loggable
 def approve_joinReq(update: Update, context: CallbackContext) -> str:
@@ -76,7 +76,7 @@ def approve_joinReq(update: Update, context: CallbackContext) -> str:
         pass
 
 
-@mikucallback(pattern=r"cb_decline=")
+@siestacallback(pattern=r"cb_decline=")
 @user_admin(AdminPerms.CAN_INVITE_USERS, noreply=True)
 @loggable
 def decline_joinReq(update: Update, context: CallbackContext) -> str:
