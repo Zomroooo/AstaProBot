@@ -1,4 +1,4 @@
-# AI Chat (C) 2020-2021 by @InukaAsith
+# AI Chat (C) 2020-2021 by @Aceladi
 
 import emoji
 import re
