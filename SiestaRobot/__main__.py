@@ -82,9 +82,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-  ────「 ʏᴏʀ ғᴏʀɢᴇʀ 」────
+  ────「 кαgυуα ѕнιиσмιуα 」────
   [やあ]({}) Kon'ichiwa {} - San!   
-  I'm Misha An Anime Themed Powerful & Advanced Group Management Robot 
+  I'm ᴋᴀɢᴜʏᴀ An Anime Themed Powerful & Advanced Group Management Robot 
   ───────────────────────
   ◈  Server Uptime :- `{}`             
   ◈  `{}` Users, Across `{}` Chats.  
@@ -101,7 +101,7 @@ PHOTO = (
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.me/yorxprobot?startgroup=new"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.me/KaguyaProBot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(text="ᴍᴏʀᴇ ᴏᴘᴛɪᴏɴs", callback_data="Shikimori_"),
@@ -229,14 +229,14 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text("[Kon'ichiwa Am Yor Forger I'll Protect You From The Guilty](https://telegra.ph/file/5cc285da85db0357eea10.jpg)",
+        update.effective_message.reply_text("[Kon'ichiwa Am 🇰‌🇦‌🇬‌🇺‌🇾‌🇦‌ 🇸‌🇭‌🇮‌🇳‌🇴‌🇲‌🇮‌🇾‌🇦‌ I'll Protect You From The Guilty](https://telegra.ph/file/5cc285da85db0357eea10.jpg)",
 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/yorXsupport"),
+                                "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NexusXSupport"),
                             InlineKeyboardButton(
-                                "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/yor_X_updates")
+                                "ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TeamNexusX")
                         ],
                     ]
                 ),
@@ -311,7 +311,7 @@ def Shikimori_about_callback(update, context):
     query = update.callback_query
     if query.data == "Shikimori_":
         query.message.edit_text(
-            text="⤀ Hoi I'm *Yor Forger*, a powerful group management bot built to help you manage your group easily. ⬴"
+            text="⤀ Hoi I'm *🇰‌🇦‌🇬‌🇺‌🇾‌🇦‌ 🇸‌🇭‌🇮‌🇳‌🇴‌🇲‌🇮‌🇾‌🇦‌*, a powerful group management bot built to help you manage your group easily. ⬴"
             "\n ➢ I can restrict users."
             "\n ➢ I can greet users with customizable welcome messages and even set a group's rules."
             "\n➢ I have an advanced anti-flood system."
@@ -327,7 +327,7 @@ def Shikimori_about_callback(update, context):
                     InlineKeyboardButton(text="ɴᴏᴛᴇs", callback_data="about_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/yorXsupport"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/NexusXSupport"),
                     InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="about_credits"),
                  ],
                  [ 
@@ -430,16 +430,13 @@ def about_credits(update, context):
     if query.data == "about_credits":
         query.message.edit_text(
             text="""  
-  *⤀ Credits for Yor Forger ⬴ *
+  *⤀ Credits for ᴋᴀɢᴜʏᴀ sʜɪɴᴏᴍɪʏᴀ ⬴ *
 
   Here Developers Making And Give Inspiration For Made The Yor Robot""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                        InlineKeyboardButton(text="Light Yagami", url="https://t.me/yagami_roito"),
-                 ],
                  [
                         InlineKeyboardButton(text="Zoro", url="https://t.me/aceladi"),
                  ],
@@ -824,7 +821,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 5148561602:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
