@@ -873,7 +873,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""*[Am Back to my job](https://telegra.ph/file/504b453954329a9cf3d76.jpg)*""",
+                f"""[Am Back to my job](https://telegra.ph/file/504b453954329a9cf3d76.jpg)""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
