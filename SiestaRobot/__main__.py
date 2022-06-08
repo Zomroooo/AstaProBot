@@ -83,20 +83,21 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
   ────「 кαgυуα ѕнιиσмιуα 」────
-  [やあ]({}) Kon'ichiwa {} - San!   
-  I'm Kaguya An Anime Themed Powerful & Advanced Group Management Robot 
+  やあ "O Kawaii Koto" {} - San!
+  I'm Vice-President Of Council Here To Manage Your Group With Useful & Advanced Features 
   ───────────────────────
-  ◈  Server Uptime :- `{}`             
-  ◈  `{}` Users, Across `{}` Chats.  
+  ◈ Version : 3.10.6
+  ◈ Server Uptime : {}
+  ◈ {} Users , Across {} Chats.
   ───────────────────────
-  ➢ Try The Help Buttons Below To Know My Abilities.
+  ➢ Try The Help Buttons Below To Know My Abilities ××
 """
 
 PHOTO = (
-      "https://telegra.ph/file/504b453954329a9cf3d76.jpg",
-      "https://telegra.ph/file/15a39f910986b639a4981.jpg",
-      "https://telegra.ph/file/5fc0fa0316da7ad8ed53a.jpg",
-      "https://telegra.ph/file/ee373f53bf79e8681e1b8.jpg",
+      "https://telegra.ph/file/2023d7c4a27551deaf8fa.jpg",
+      "https://telegra.ph/file/02ff19d802c4ce367dd1c.jpg",
+      "https://telegra.ph/file/0e2064896320536b65aae.jpg",
+      "https://telegra.ph/file/d672c58395ee98b82394e.jpg",
 )
 
 buttons = [
@@ -312,8 +313,8 @@ def Shikimori_about_callback(update, context):
     if query.data == "Shikimori_":
         query.message.edit_text(
             text="⤀ Hoi I'm 🇰‌🇦‌🇬‌🇺‌🇾‌🇦‌ 🇸‌🇭‌🇮‌🇳‌🇴‌🇲‌🇮‌🇾‌🇦‌, a powerful group management bot built to help you manage your group easily. ⬴"
-            "\n ➢ I can restrict users."
-            "\n ➢ I can greet users with customizable welcome messages and even set a group's rules."
+            "\n➢ I can restrict users."
+            "\n➢ I can greet users with customizable welcome messages and even set a group's rules."
             "\n➢ I have an advanced anti-flood system."
             "\n➢ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.."
             "\n➢ I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
