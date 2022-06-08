@@ -441,6 +441,9 @@ def about_credits(update, context):
                         InlineKeyboardButton(text="Zoro", url="https://t.me/aceladi"),
                  ],
                  [
+                        InlineKeyboardButton(text="Husbando", url="https://t.me/Husbandoo"),
+                 ], 
+                 [
                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_back")
                  ]
                 ]
