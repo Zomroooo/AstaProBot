@@ -32,7 +32,7 @@ async def repo(_, message):
         photo=MEMEK,
         caption=f"""✨ **Hey I'm Kaguya** ✨ 
 
-**Oᴡɴᴇʀ ʀᴇᴘᴏ : [ᴄʜᴇʀʀʏ-ᴋᴜɴ](https://t.me/Aceladi)**
+**Oᴡɴᴇʀ ʀᴇᴘᴏ : [Zoro](https://t.me/Aceladi)**
 ╔═══════════════╗
 ┣× ʀᴇᴘᴏ ɪs ᴘʀɪᴠᴀᴛᴇ
 ┣× ᴏᴡɴᴇʀ ɪs ʜᴀʀᴀᴍɪ 
