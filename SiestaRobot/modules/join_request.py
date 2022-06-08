@@ -12,7 +12,7 @@ from telegram.utils.helpers import mention_html
 from SiestaRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
 
 from SiestaRobot import dispatcher
-from SiestaRobot.modules.helper_funcs.decorators import mikucallback
+from SiestaRobot.modules.helper_funcs.decorators import siestacallback
 
 from SiestaRobot.modules.log_channel import loggable
 
