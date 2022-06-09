@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import SiestaRobot.modules.sql.notes_sql as sql
-from SiestaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from SiestaRobot.__main__ import DATA_IMPORT
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin
-from SiestaRobot.modules.helper_funcs.alternate import typing_action
+import KaguyaRobot.modules.sql.notes_sql as sql
+from KaguyaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from KaguyaRobot.__main__ import DATA_IMPORT
+from KaguyaRobot.modules.helper_funcs.chat_status import user_admin
+from KaguyaRobot.modules.helper_funcs.alternate import typing_action
 
-# from SiestaRobot.modules.rules import get_rules
-import SiestaRobot.modules.sql.rules_sql as rulessql
+# from KaguyaRobot.modules.rules import get_rules
+import KaguyaRobot.modules.sql.rules_sql as rulessql
 
-# from SiestaRobot.modules.sql import warns_sql as warnssql
-import SiestaRobot.modules.sql.blacklist_sql as blacklistsql
-from SiestaRobot.modules.sql import disable_sql as disabledsql
+# from KaguyaRobot.modules.sql import warns_sql as warnssql
+import KaguyaRobot.modules.sql.blacklist_sql as blacklistsql
+from KaguyaRobot.modules.sql import disable_sql as disabledsql
 
-# from SiestaRobot.modules.sql import cust_filters_sql as filtersql
-# import SiestaRobot.modules.sql.welcome_sql as welcsql
-import SiestaRobot.modules.sql.locks_sql as locksql
-from SiestaRobot.modules.connection import connected
+# from KaguyaRobot.modules.sql import cust_filters_sql as filtersql
+# import KaguyaRobot.modules.sql.welcome_sql as welcsql
+import KaguyaRobot.modules.sql.locks_sql as locksql
+from KaguyaRobot.modules.connection import connected
 
 
 @user_admin
