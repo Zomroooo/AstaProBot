@@ -20,8 +20,8 @@ SOFTWARE.
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.errors import capture_err
+from KaguyaRobot import pbot as app
+from KaguyaRobot.utils.errors import capture_err
 
 __help__ = """
 
@@ -31,7 +31,7 @@ __help__ = """
 • this module is used for fetching ss from a website
 • for example : /webss <url>
 """
-__mod_name__ = "Webshot​"
+__mod_name__ = "Webshot"
 
 
 @app.on_message(filters.command("webss"))
