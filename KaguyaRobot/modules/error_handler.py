@@ -14,8 +14,8 @@ from telegram import(
 )
 from telegram.ext import CallbackContext
 
-from SiestaRobot import DEV_USERS, ERROR_LOGS, dispatcher
-from SiestaRobot.modules.helper_funcs.decorators import siestacmd
+from KaguyaRobot import DEV_USERS, ERROR_LOGS, dispatcher
+from KaguyaRobot.modules.helper_funcs.decorators import Kaguyacmd
 
 pretty_errors.mono()
 
@@ -119,7 +119,7 @@ def error_callback(update: Update, context: CallbackContext):
         )
 
 
-@siestacmd(command="errors")
+@Kaguyacmd(command="errors")
 def list_errors(update: Update, context: CallbackContext):
     if update.effective_user.id not in DEV_USERS:
         return
