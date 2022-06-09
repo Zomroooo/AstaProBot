@@ -1,9 +1,9 @@
 from time import sleep
 
-import SiestaRobot.modules.sql.global_bans_sql as gban_sql
-import SiestaRobot.modules.sql.users_sql as user_sql
-from SiestaRobot import DEV_USERS, OWNER_ID, dispatcher
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus
+import KaguyaRobot.modules.sql.global_bans_sql as gban_sql
+import KaguyaRobot.modules.sql.users_sql as user_sql
+from KaguyaRobot import DEV_USERS, OWNER_ID, dispatcher
+from KaguyaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
