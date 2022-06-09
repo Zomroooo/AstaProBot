@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from SiestaRobot import LOGGER
-from SiestaRobot.modules.users import get_user_id
+from KaguyaRobot import LOGGER
+from KaguyaRobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
