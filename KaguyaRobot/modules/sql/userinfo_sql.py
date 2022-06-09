@@ -1,5 +1,5 @@
 import threading
-from SiestaRobot.modules.sql import BASE, SESSION
+from KaguyaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
