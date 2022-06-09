@@ -1,7 +1,7 @@
 import aiohttp
 from pyrogram import filters
-from SiestaRobot import pbot, BOT_USERNAME
-from SiestaRobot.utils.errors import capture_err
+from KaguyaRobot import pbot, BOT_USERNAME
+from KaguyaRobot.utils.errors import capture_err
 
 
 __mod_name__ = "Github"
