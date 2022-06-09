@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from SiestaRobot import DRAGONS, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from KaguyaRobot import DRAGONS, dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -16,14 +16,14 @@ from SiestaRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from SiestaRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
-from SiestaRobot.modules.helper_funcs.extraction import (
+from KaguyaRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
+from KaguyaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.helper_funcs.alternate import send_message
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.log_channel import loggable
+from KaguyaRobot.modules.helper_funcs.alternate import send_message
+from KaguyaRobot.modules.language import gs
 
 
 @bot_admin
