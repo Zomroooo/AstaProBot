@@ -54,4 +54,6 @@ google-api-python-client
 googletrans
 heroku3
 spamwatch
+youtube_search
+youtube-search-python
 gitpython
