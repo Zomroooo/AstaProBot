@@ -1,6 +1,6 @@
 import requests
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot
+from KaguyaRobot.events import register
+from KaguyaRobot import telethn as tbot
 
 
 @register(pattern="^/ptl ?(.*)")
@@ -46,7 +46,7 @@ import urllib
 import asyncio
 import os
 from pyrogram import filters
-from SiestaRobot import TEMP_DOWNLOAD_DIRECTORY, pbot
+from KaguyaRobot import TEMP_DOWNLOAD_DIRECTORY, pbot
 
 
 @pbot.on_message(filters.command("boobs"))
