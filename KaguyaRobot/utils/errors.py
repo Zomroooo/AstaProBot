@@ -1,5 +1,5 @@
-""" WRITTEN BY @pokurt, https://github.com/pokurt"""
-# credits goes to William, https://github.com/WilliamButcherBot
+""" WRITTEN BY Aceladi, https://github.com/Zomroo"""
+# credits goes to William, https://github.com/Zomroo
 
 import sys
 import traceback
@@ -7,7 +7,7 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from SiestaRobot import LOGGER, pbot as app
+from KaguyaRobot import LOGGER, pbot as app
 
 
 def split_limits(text):
