@@ -1,6 +1,6 @@
-import SiestaRobot.modules.sql.blacklistusers_sql as sql
-from SiestaRobot import ALLOW_EXCL
-from SiestaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import KaguyaRobot.modules.sql.blacklistusers_sql as sql
+from KaguyaRobot import ALLOW_EXCL
+from KaguyaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
