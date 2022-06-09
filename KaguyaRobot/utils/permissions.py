@@ -1,9 +1,9 @@
 from functools import wraps
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from pyrogram.types import Message
-from SiestaRobot import pbot as app
-from SiestaRobot import DRAGONS, DEV_USERS, WOLVES, DEMONS, TIGERS
-from SiestaRobot.utils.adminperms import member_permissions
+from KaguyaRobot import pbot as app
+from KaguyaRobot import DRAGONS, DEV_USERS, WOLVES, DEMONS, TIGERS
+from KaguyaRobot.utils.adminperms import member_permissions
 
 SUDO = DRAGONS, DEV_USERS, WOLVES, DEMONS, TIGERS
 
