@@ -7,12 +7,12 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from SiestaRobot import aiohttpsession as session
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.utils.pastebin import paste
+from KaguyaRobot import aiohttpsession as session
+from KaguyaRobot import pbot as app
+from KaguyaRobot.utils.errors import capture_err
+from KaguyaRobot.utils.pastebin import paste
 
-__mod_name__ = "Paste​"
+__mod_name__ = "Paste"
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
