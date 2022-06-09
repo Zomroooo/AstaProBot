@@ -6,19 +6,19 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import SiestaRobot.modules.sql.blacklist_sql as sql
-from SiestaRobot import dispatcher, LOGGER
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SiestaRobot.modules.helper_funcs.extraction import extract_text
-from SiestaRobot.modules.helper_funcs.misc import split_message
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.warns import warn
-from SiestaRobot.modules.helper_funcs.string_handling import extract_time
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.sql.approve_sql import is_approved
-from SiestaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SiestaRobot.modules.language import gs
+import KaguyaRobot.modules.sql.blacklist_sql as sql
+from KaguyaRobot import dispatcher, LOGGER
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from KaguyaRobot.modules.helper_funcs.extraction import extract_text
+from KaguyaRobot.modules.helper_funcs.misc import split_message
+from KaguyaRobot.modules.log_channel import loggable
+from KaguyaRobot.modules.warns import warn
+from KaguyaRobot.modules.helper_funcs.string_handling import extract_time
+from KaguyaRobot.modules.connection import connected
+from KaguyaRobot.modules.sql.approve_sql import is_approved
+from KaguyaRobot.modules.helper_funcs.alternate import send_message, typing_action
+from KaguyaRobot.modules.language import gs
 
 BLACKLIST_GROUP = 11
 
