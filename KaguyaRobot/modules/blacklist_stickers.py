@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import SiestaRobot.modules.sql.blsticker_sql as sql
-from SiestaRobot import LOGGER, dispatcher
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.alternate import send_message
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SiestaRobot.modules.helper_funcs.misc import split_message
-from SiestaRobot.modules.helper_funcs.string_handling import extract_time
+import KaguyaRobot.modules.sql.blsticker_sql as sql
+from KaguyaRobot import LOGGER, dispatcher
+from KaguyaRobot.modules.connection import connected
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.alternate import send_message
+from KaguyaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from KaguyaRobot.modules.helper_funcs.misc import split_message
+from KaguyaRobot.modules.helper_funcs.string_handling import extract_time
 
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.warns import warn
+from KaguyaRobot.modules.log_channel import loggable
+from KaguyaRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
