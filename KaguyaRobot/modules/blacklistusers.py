@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import SiestaRobot.modules.sql.blacklistusers_sql as sql
-from SiestaRobot import (
+import KaguyaRobot.modules.sql.blacklistusers_sql as sql
+from KaguyaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from SiestaRobot import (
     WOLVES,
     dispatcher,
 ) 
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus
-from SiestaRobot.modules.helper_funcs.extraction import (
+from KaguyaRobot.modules.helper_funcs.chat_status import dev_plus
+from KaguyaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SiestaRobot.modules.log_channel import gloggable
+from KaguyaRobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
