@@ -5,16 +5,16 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from SiestaRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.language import gs
+from KaguyaRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.language import gs
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
-kayo_btn = "Kayo 🏴‍☠️"
+kayo_btn = "Kayo 🏴☠️"
 prequel_btn = "⬅️ Prequel"
 sequel_btn = "Sequel ➡️"
 close_btn = "Close ❌"
