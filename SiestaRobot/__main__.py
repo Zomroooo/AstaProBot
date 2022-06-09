@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
   ────「 кαgυуα ѕнιиσмιуα 」────
-  やあ "O Kawaii Koto" {} - San!
+  [やあ]({}) Kon'ichiwa {} - San!
   I'm Vice-President Of Council Here To Manage Your Group With Useful & Advanced Features 
   ───────────────────────
   ◈ Version : 3.10.6
@@ -312,7 +312,7 @@ def Shikimori_about_callback(update, context):
     query = update.callback_query
     if query.data == "Shikimori_":
         query.message.edit_text(
-            text="⤀ Hoi I'm 🇰‌🇦‌🇬‌🇺‌🇾‌🇦‌ 🇸‌🇭‌🇮‌🇳‌🇴‌🇲‌🇮‌🇾‌🇦‌, a powerful group management bot built to help you manage your group easily. ⬴"
+            text="⤀ Hoi I'm Kaguya Shinomiya, a powerful group management bot built to help you manage your group easily. ⬴"
             "\n➢ I can restrict users."
             "\n➢ I can greet users with customizable welcome messages and even set a group's rules."
             "\n➢ I have an advanced anti-flood system."
