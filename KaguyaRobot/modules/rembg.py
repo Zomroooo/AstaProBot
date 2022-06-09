@@ -1,4 +1,4 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 TeamNexusX
 
 
 # This file is part of Daisy (Telegram Bot)
@@ -25,9 +25,9 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from SiestaRobot import REM_BG_API_KEY
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot
+from KaguyaRobot import REM_BG_API_KEY
+from KaguyaRobot.events import register
+from KaguyaRobot import telethn as tbot
 
 REM_BG_API_KEY = "REM_BG_API_KEY"
 TEMP_DOWNLOAD_DIRECTORY = "./"
