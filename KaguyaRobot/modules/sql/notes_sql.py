@@ -1,8 +1,8 @@
 # Note: chat_id's are stored as strings because the int is too large to be stored in a PSQL database.
 import threading
 
-from SiestaRobot.modules.helper_funcs.msg_types import Types
-from SiestaRobot.modules.sql import BASE, SESSION
+from KaguyaRobot.modules.helper_funcs.msg_types import Types
+from KaguyaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func, Integer
 
 
