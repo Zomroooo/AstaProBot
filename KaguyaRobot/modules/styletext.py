@@ -1,6 +1,6 @@
-from SiestaRobot  import dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.alternate import typing_action
+from KaguyaRobot  import dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
