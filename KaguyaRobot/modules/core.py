@@ -1,15 +1,15 @@
-from SiestaRobot import telethn as tbot
-from SiestaRobot.events import register
+from KaguyaRobot import telethn as tbot
+from KaguyaRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from SiestaRobot import OWNER_ID, DEV_USERS
-from SiestaRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from SiestaRobot import TEMP_DOWNLOAD_DIRECTORY
+from KaguyaRobot import OWNER_ID, DEV_USERS
+from KaguyaRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from KaguyaRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './SiestaRobot/resources/Siesta.jpg'
+water = './KaguyaRobot/resources/Kaguya.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./SiestaRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./KaguyaRobot/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
