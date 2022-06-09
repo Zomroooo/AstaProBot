@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import SiestaRobot.modules.sql.notes_sql as sql
-from SiestaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from SiestaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from SiestaRobot.modules.helper_funcs.msg_types import get_note_type
-from SiestaRobot.modules.helper_funcs.string_handling import (
+import KaguyaRobot.modules.sql.notes_sql as sql
+from KaguyaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from KaguyaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from KaguyaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from KaguyaRobot.modules.helper_funcs.msg_types import get_note_type
+from KaguyaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
@@ -30,7 +30,7 @@ from telegram.ext import (
     Filters,
     MessageHandler,
 )
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.language import gs
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")
