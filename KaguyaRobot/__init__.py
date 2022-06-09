@@ -40,7 +40,7 @@ logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLeve
 LOGGER = logging.getLogger('[KaguyaRobot]')
 LOGGER.info("Kaguya is starting. | An Shiinobu Project Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/shiinobu (t.me/saint_foire)")
+LOGGER.info("Project maintained by: github.com/Zomroo (t.me/Aceladi)")
 
 # if version < 3.9, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 9:
@@ -213,13 +213,11 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(2088106582)
-DRAGONS.add(945137470)
-DRAGONS.add(5099853374)
+DRAGONS.add(5148561602)
+DRAGONS.add(1938491135)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(2088106582)
-DEV_USERS.add(945137470)
-DEV_USERS.add(5099853374)
+DEV_USERS.add(5148561602)
+DEV_USERS.add(1938491135)
 
 if not SPAMWATCH_API:
     sw = None
