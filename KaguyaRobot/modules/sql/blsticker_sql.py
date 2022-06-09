@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, distinct, func, Integer
 
-from SiestaRobot.modules.sql import BASE, SESSION
+from KaguyaRobot.modules.sql import BASE, SESSION
 
 
 class StickersFilters(BASE):
