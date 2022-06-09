@@ -92,8 +92,5 @@ __help__ = """
 × `/weather`*:* <region> for weather, location, temperature,etc.
 
 
-× for example: /weather<region> for results
-
-
-       *Powered by sin union *"""
+× for example: /weather<region> for results"""
 __mod_name__ = "weather"
