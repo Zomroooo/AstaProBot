@@ -4,9 +4,9 @@ import html
 import random
 import time
 
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import (is_user_admin)
+from KaguyaRobot import dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.chat_status import (is_user_admin)
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async, CallbackQueryHandler
 from telegram import ParseMode, Update, InlineKeyboardMarkup, InlineKeyboardButton, replymarkup, ChatPermissions
 from telegram.error import BadRequest
