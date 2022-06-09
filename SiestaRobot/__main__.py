@@ -375,7 +375,7 @@ def about_admin(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_")
                  ]
                 ]
             ),
@@ -408,7 +408,7 @@ def about_notes(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_")
                  ]
                 ]
             ),
@@ -445,7 +445,7 @@ def about_credits(update, context):
                         InlineKeyboardButton(text="Husbando", url="https://t.me/Husbandoo"),
                  ], 
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_")
                  ]
                 ]
             ),
@@ -484,7 +484,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Shikimori")
+                    InlineKeyboardButton(text="Go Back", callback_data="Shikimori_")
                  ]
                 ]
             ),
