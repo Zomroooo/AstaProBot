@@ -5,8 +5,8 @@ from telethon import events
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from SiestaRobot import telethn, dispatcher
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus
+from KaguyaRobot import telethn, dispatcher
+from KaguyaRobot.modules.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 
