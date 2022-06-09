@@ -2,12 +2,12 @@ import html
 import random
 import time
 
-import SiestaRobot.modules.fun_strings as fun_strings
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler,DisableAbleMessageHandler
-from SiestaRobot.modules.helper_funcs.chat_status import is_user_admin
-from SiestaRobot.modules.helper_funcs.extraction import extract_user
-from SiestaRobot.modules.language import gs
+import KaguyaRobot.modules.fun_strings as fun_strings
+from KaguyaRobot import dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler,DisableAbleMessageHandler
+from KaguyaRobot.modules.helper_funcs.chat_status import is_user_admin
+from KaguyaRobot.modules.helper_funcs.extraction import extract_user
+from KaguyaRobot.modules.language import gs
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 
@@ -19,9 +19,9 @@ from telegram.ext import CallbackContext, run_async, Filters
 
 from telegram.utils.helpers import escape_markdown
 
-from SiestaRobot import DRAGONS, DEMONS
+from KaguyaRobot import DRAGONS, DEMONS
 
-from SiestaRobot.modules.helper_funcs.alternate import typing_action
+from KaguyaRobot.modules.helper_funcs.alternate import typing_action
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
