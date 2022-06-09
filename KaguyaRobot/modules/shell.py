@@ -1,7 +1,7 @@
 import subprocess
 
-from SiestaRobot import LOGGER, dispatcher
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus
+from KaguyaRobot import LOGGER, dispatcher
+from KaguyaRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
