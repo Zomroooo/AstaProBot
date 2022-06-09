@@ -7,9 +7,9 @@ import traceback
 import aiohttp
 from telethon import events
 
-from SiestaRobot import telethn as bot
-from SiestaRobot.modules.urluploader import download_file
-from SiestaRobot.utils.uputils import humanbytes, progress
+from KaguyaRobot import telethn as bot
+from KaguyaRobot.modules.urluploader import download_file
+from KaguyaRobot.utils.uputils import humanbytes, progress
 
 DOWNLOADPATH = "/Users/Fy/Downloads/Telegram_Desktop/Upload"
 
