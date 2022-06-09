@@ -7,12 +7,12 @@ import time
 import re
 import sys
 import traceback
-import SiestaRobot.modules.sql.users_sql as sql
+import KaguyaRobot.modules.sql.users_sql as sql
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from SiestaRobot import (
+from KaguyaRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -33,9 +33,9 @@ from SiestaRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from SiestaRobot.modules import ALL_MODULES
-from SiestaRobot.modules.helper_funcs.chat_status import is_user_admin
-from SiestaRobot.modules.helper_funcs.misc import paginate_modules
+from KaguyaRobot.modules import ALL_MODULES
+from KaguyaRobot.modules.helper_funcs.chat_status import is_user_admin
+from KaguyaRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -105,18 +105,18 @@ buttons = [
         InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ", url="t.me/KaguyaProBot?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="ᴍᴏʀᴇ ᴏᴘᴛɪᴏɴs", callback_data="Shikimori_"),
+        InlineKeyboardButton(text="ᴍᴏʀᴇ ᴏᴘᴛɪᴏɴs", callback_data="Kaguya_"),
     ],
     [
-        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="t.me/hellsingnetwork"),
+        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="t.me/Hellsingnetwork"),
     ],        
 ]
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-KURUMI_IMG = "https://telegra.ph/file/19b5a3970a0a416d05a4d.jpg"
-ShikimoriSTART = "https://telegra.ph/file/d25870fc3e94ed674490c.mp4"
+KAGUYA_IMG = "https://telegra.ph/file/0e2064896320536b65aae.jpg"
+KaguyaSTART = "https://telegra.ph/file/16b94be672eb5878cdd6d.mp4"
 
 
 
@@ -131,7 +131,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("SiestaRobot.modules." + module_name)
+    imported_module = importlib.import_module("KaguyaRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text("[Kon'ichiwa Am 🇰‌🇦‌🇬‌🇺‌🇾‌🇦‌ 🇸‌🇭‌🇮‌🇳‌🇴‌🇲‌🇮‌🇾‌🇦‌ I'll Protect You From The Guilty](https://telegra.ph/file/5cc285da85db0357eea10.jpg)",
+        update.effective_message.reply_text("[Kon'ichiwa Am 🇰🇦🇬🇺🇾🇦 🇸🇭🇮🇳🇴🇲🇮🇾🇦 I'll Protect You From The Guilty](https://telegra.ph/file/02ff19d802c4ce367dd1c.jpg)",
 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -308,9 +308,9 @@ def error_callback(update: Update, context: CallbackContext):
 
 
 
-def Shikimori_about_callback(update, context):
+def Kaguya_about_callback(update, context):
     query = update.callback_query
-    if query.data == "Shikimori_":
+    if query.data == "Kaguya_":
         query.message.edit_text(
             text="⤀ Hoi I'm Kaguya Shinomiya, a powerful group management bot built to help you manage your group easily. ⬴"
             "\n➢ I can restrict users."
@@ -335,12 +335,12 @@ def Shikimori_about_callback(update, context):
                     InlineKeyboardButton(text=" ʜᴇʟᴘ", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Kaguya_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "Shikimori_back":
+    elif query.data == "Kaguya_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -375,12 +375,12 @@ def about_admin(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Kaguya_")
                  ]
                 ]
             ),
         )
-    elif query.data == "Shikimori_back":
+    elif query.data == "Kaguya_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -408,12 +408,12 @@ def about_notes(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Kaguya_")
                  ]
                 ]
             ),
         )
-    elif query.data == "Shikimori_back":
+    elif query.data == "Kaguya_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -445,12 +445,12 @@ def about_credits(update, context):
                         InlineKeyboardButton(text="Husbando", url="https://t.me/Husbandoo"),
                  ], 
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Shikimori_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="Kaguya_")
                  ]
                 ]
             ),
         )
-    elif query.data == "Shikimori_back":
+    elif query.data == "Kaguya_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -484,7 +484,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Shikimori_")
+                    InlineKeyboardButton(text="Go Back", callback_data="Kaguya_")
                  ]
                 ]
             ),
@@ -874,7 +874,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""[Am Back to my job](https://telegra.ph/file/504b453954329a9cf3d76.jpg)""",
+                f"""[Am Back to my job](https://telegra.ph/file/2225153fd8b747a9edeae.jpg)""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
@@ -898,7 +898,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        Shikimori_about_callback, pattern=r"Shikimori_", run_async=True
+        Kaguya_about_callback, pattern=r"Kaguya_", run_async=True
     )
     about_admin_callback = CallbackQueryHandler(
         about_admin, pattern=r"admin_", run_async=True
