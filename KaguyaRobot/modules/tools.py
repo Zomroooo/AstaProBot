@@ -1,11 +1,11 @@
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.language import gs
 
 
 def helps(chat):
     return gs(chat, "tools_help")
 
 __help__ = """
-  ──「 ZOMBIES 」──
+  ──「 TOOLS 」──
   
  • /tgm :Get Telegraph Link Of Replied Media
  • /tgt :Get Telegraph Link of Replied Text
