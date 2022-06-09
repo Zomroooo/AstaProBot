@@ -13,9 +13,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import SiestaRobot.modules.sql.global_bans_sql as sql
-from SiestaRobot.modules.sql.users_sql import get_user_com_chats
-from SiestaRobot import (
+import KaguyaRobot.modules.sql.global_bans_sql as sql
+from KaguyaRobot.modules.sql.users_sql import get_user_com_chats
+from KaguyaRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -29,17 +29,17 @@ from SiestaRobot import (
     sw,
     dispatcher,
 )
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from KaguyaRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from SiestaRobot.modules.helper_funcs.extraction import (
+from KaguyaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SiestaRobot.modules.helper_funcs.misc import send_to_list
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.helper_funcs.misc import send_to_list
+from KaguyaRobot.modules.language import gs
 
 GBAN_ENFORCE_GROUP = 6
 
