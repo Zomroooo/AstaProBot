@@ -1,7 +1,7 @@
 from datetime import datetime
 from functools import wraps
 from telegram.ext import CallbackContext
-from SiestaRobot.modules.helper_funcs.misc import is_module_loaded
+from KaguyaRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -11,10 +11,10 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from SiestaRobot import EVENT_LOGS, LOGGER, dispatcher
-    from SiestaRobot.modules.helper_funcs.chat_status import user_admin
-    from SiestaRobot.modules.sql import log_channel_sql as sql
-    from SiestaRobot.modules.language import gs
+    from KaguyaRobot import EVENT_LOGS, LOGGER, dispatcher
+    from KaguyaRobot.modules.helper_funcs.chat_status import user_admin
+    from KaguyaRobot.modules.sql import log_channel_sql as sql
+    from KaguyaRobot.modules.language import gs
 
     def loggable(func):
         @wraps(func)
@@ -192,7 +192,7 @@ if is_module_loaded(FILENAME):
     def helps(chat):
         return gs(chat, "logchannel_help")
 
-    __mod_name__ = "Log Channel​"
+    __mod_name__ = "Log Channel"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog, run_async=True)
