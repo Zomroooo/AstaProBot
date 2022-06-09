@@ -1,14 +1,14 @@
 import html
 
-from SiestaRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from KaguyaRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from SiestaRobot.modules.sql import cleaner_sql as sql
+from KaguyaRobot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -16,7 +16,7 @@ from telegram.ext import (
     Filters,
     MessageHandler,
 )
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.language import gs
 
 CMD_STARTERS = ("/", "!") if ALLOW_EXCL else "/"
 BLUE_TEXT_CLEAN_GROUP = 13
