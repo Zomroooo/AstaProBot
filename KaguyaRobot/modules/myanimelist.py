@@ -1,7 +1,7 @@
 # Module to get info about anime, characters, manga etc. by @TheRealPhoenix
 
-from jikanpy import Jikan
-from jikanpy.exceptions import APIException
+from Kaguyapy import Kaguya
+from Kaguyapy.exceptions import APIException
 
 from telegram import (
     Message,
@@ -14,9 +14,9 @@ from telegram import (
 )
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 
-from SiestaRobot import dispatcher
+from KaguyaRobot import dispatcher
 
-jikan = Jikan()
+Kaguya = Kaguya()
 
 
 def anime(update: Update, context: CallbackContext):
@@ -25,7 +25,7 @@ def anime(update: Update, context: CallbackContext):
     query = " ".join(args)
     res = ""
     try:
-        res = jikan.search("anime", query)
+        res = Kaguya.search("anime", query)
     except APIException:
         msg.reply_text("Error connecting to the API. Please try again!")
         return ""
@@ -35,7 +35,7 @@ def anime(update: Update, context: CallbackContext):
         msg.reply_text("Error connecting to the API. Please try again!")
         return ""
     if res:
-        anime = jikan.anime(res)
+        anime = Kaguya.anime(res)
         title = anime.get("title")
         japanese = anime.get("title_japanese")
         type = anime.get("type")
@@ -98,13 +98,13 @@ def character(update: Update, context: CallbackContext):
     args = context.args
     query = " ".join(args)
     try:
-        search = jikan.search("character", query).get("results")[0].get("mal_id")
+        search = Kaguya.search("character", query).get("results")[0].get("mal_id")
     except APIException:
         msg.reply_text("No results found!")
         return ""
     if search:
         try:
-            res = jikan.character(search)
+            res = Kaguya.character(search)
         except APIException:
             msg.reply_text("Error connecting to the API. Please try again!")
             return ""
@@ -129,7 +129,7 @@ def character(update: Update, context: CallbackContext):
 def upcoming(update: Update, context: CallbackContext):
     msg = update.effective_message
     rep = "<b>Upcoming anime</b>\n"
-    later = jikan.season_later()
+    later = Kaguya.season_later()
     anime = later.get("anime")
     for new in anime:
         name = new.get("title")
@@ -147,13 +147,13 @@ def manga(update: Update, context: CallbackContext):
     res = ""
     manga = ""
     try:
-        res = jikan.search("manga", query).get("results")[0].get("mal_id")
+        res = Kaguya.search("manga", query).get("results")[0].get("mal_id")
     except APIException:
         msg.reply_text("Error connecting to the API. Please try again!")
         return ""
     if res:
         try:
-            manga = jikan.manga(res)
+            manga = Kaguya.manga(res)
         except APIException:
             msg.reply_text("Error connecting to the API. Please try again!")
             return ""
