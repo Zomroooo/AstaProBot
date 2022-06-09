@@ -1,9 +1,9 @@
 from typing import Optional
 
-import SiestaRobot.modules.sql.rules_sql as sql
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.helper_funcs.chat_status import user_admin
-from SiestaRobot.modules.helper_funcs.string_handling import markdown_parser
+import KaguyaRobot.modules.sql.rules_sql as sql
+from KaguyaRobot import dispatcher
+from KaguyaRobot.modules.helper_funcs.chat_status import user_admin
+from KaguyaRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
