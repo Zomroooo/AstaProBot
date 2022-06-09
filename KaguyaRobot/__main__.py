@@ -359,7 +359,7 @@ def about_admin(update, context):
     if query.data == "admin_":
         query.message.edit_text(
             text="""  
-  *⤀ Let's make your group bit effective now ⬴*
+  *⤀ Let's make your group bit effective ⤀*
 
   Congragulations, Yor Robot now ready to manage your group.
 
@@ -431,7 +431,7 @@ def about_credits(update, context):
     if query.data == "about_credits":
         query.message.edit_text(
             text="""  
-  *⤀ Credits for ᴋᴀɢᴜʏᴀ sʜɪɴᴏᴍɪʏᴀ ⬴ *
+  *⤀ Credits for ᴋᴀɢᴜʏᴀ sʜɪɴᴏᴍɪʏᴀ ⬴*
 
   Here Developers Making And Give Inspiration For Made The Yor Robot""",
             parse_mode=ParseMode.MARKDOWN,
