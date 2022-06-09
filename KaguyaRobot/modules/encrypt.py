@@ -1,6 +1,6 @@
-from SiestaRobot import telethn as tbot
+from KaguyaRobot import telethn as tbot
 import os
-from SiestaRobot.events import register
+from KaguyaRobot.events import register
 import secureme
 
 
