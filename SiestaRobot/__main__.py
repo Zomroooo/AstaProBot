@@ -115,8 +115,8 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-KURUMI_IMG = "https://telegra.ph/file/19b5a3970a0a416d05a4d.jpg"
-ShikimoriSTART = "https://telegra.ph/file/d25870fc3e94ed674490c.mp4"
+KAGUYA_IMG = "https://telegra.ph/file/2225153fd8b747a9edeae.jpg"
+ShikimoriSTART = "https://telegra.ph/file/16b94be672eb5878cdd6d.mp4"
 
 
 
@@ -359,7 +359,7 @@ def about_admin(update, context):
     if query.data == "admin_":
         query.message.edit_text(
             text="""  
-  *⤀ Let's make your group bit effective now ⬴*
+  *⤀ Let's make your group bit effective ⬴*
 
   Congragulations, Yor Robot now ready to manage your group.
 
@@ -874,7 +874,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""[Am Back to my job](https://telegra.ph/file/504b453954329a9cf3d76.jpg)""",
+                f"""[Am Back to my job](https://telegra.ph/file/cc77cab3a6093eea22662.jpg)""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
