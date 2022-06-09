@@ -1,6 +1,6 @@
 import io
-from SiestaRobot.events import register
-from SiestaRobot import telethn as tbot
+from KaguyaRobot.events import register
+from KaguyaRobot import telethn as tbot
 from telethon import types
 from telethon import events
 from telethon.tl import functions
