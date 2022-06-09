@@ -22,19 +22,19 @@ from pyrogram.types import (CallbackQuery,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from SiestaRobot import (
+from KaguyaRobot import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
 )
-from SiestaRobot import pbot as app 
-from SiestaRobot import arq
-from SiestaRobot.services.keyboard import Ikb
-from SiestaRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from SiestaRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
-from SiestaRobot.services.types import InlineQueryResultCachedDocument
-from SiestaRobot.modules.info import get_chat_info, get_user_info
-from SiestaRobot.utils.pastebin import paste
+from KaguyaRobot import pbot as app 
+from KaguyaRobot import arq
+from KaguyaRobot.services.keyboard import Ikb
+from KaguyaRobot.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
+from KaguyaRobot.services.tasks import _get_tasks_text, all_tasks, rm_task
+from KaguyaRobot.services.types import InlineQueryResultCachedDocument
+from KaguyaRobot.modules.info import get_chat_info, get_user_info
+from KaguyaRobot.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = EVENT_LOGS
 
