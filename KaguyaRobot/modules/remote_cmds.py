@@ -1,12 +1,12 @@
-from SiestaRobot import dispatcher, LOGGER
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from KaguyaRobot import dispatcher, LOGGER
+from KaguyaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
     is_user_in_chat,
 )
-from SiestaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SiestaRobot.modules.helper_funcs.filters import CustomFilters
+from KaguyaRobot.modules.helper_funcs.extraction import extract_user_and_text
+from KaguyaRobot.modules.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
