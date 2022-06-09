@@ -57,3 +57,4 @@ spamwatch
 youtube_search
 youtube-search-python
 gitpython
+youtube_dl
