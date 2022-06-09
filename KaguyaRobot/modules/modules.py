@@ -1,8 +1,8 @@
 import importlib
 import collections
 
-from SiestaRobot import dispatcher, telethn
-from SiestaRobot.__main__ import (
+from KaguyaRobot import dispatcher, telethn
+from KaguyaRobot.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -13,7 +13,7 @@ from SiestaRobot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from SiestaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from KaguyaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
