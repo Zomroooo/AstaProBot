@@ -17,9 +17,9 @@ from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.language import gs
     
-from SiestaRobot import (
+from KaguyaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -32,16 +32,16 @@ from SiestaRobot import (
     StartTime,
     SUPPORT_CHAT,
 )
-from SiestaRobot.__main__ import STATS, TOKEN, USER_INFO
-from SiestaRobot.modules.sql import SESSION
-import SiestaRobot.modules.sql.userinfo_sql as sql
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from SiestaRobot.modules.sql.afk_sql import is_afk, set_afk
-from SiestaRobot.modules.sql.users_sql import get_user_num_chats
-from SiestaRobot.modules.helper_funcs.chat_status import sudo_plus
-from SiestaRobot.modules.helper_funcs.extraction import extract_user
-from SiestaRobot import telethn
+from KaguyaRobot.__main__ import STATS, TOKEN, USER_INFO
+from KaguyaRobot.modules.sql import SESSION
+import KaguyaRobot.modules.sql.userinfo_sql as sql
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from KaguyaRobot.modules.sql.afk_sql import is_afk, set_afk
+from KaguyaRobot.modules.sql.users_sql import get_user_num_chats
+from KaguyaRobot.modules.helper_funcs.chat_status import sudo_plus
+from KaguyaRobot.modules.helper_funcs.extraction import extract_user
+from KaguyaRobot import telethn
 
 def no_by_per(totalhp, percentage):
     """
@@ -448,7 +448,7 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Siesta Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>╔═━「 Current Kaguya Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     result += "\n<b>╘═━「 Powered By Shiinobu 」</b>"
     update.effective_message.reply_text(
