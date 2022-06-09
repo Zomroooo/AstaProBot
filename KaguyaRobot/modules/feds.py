@@ -7,8 +7,8 @@ import time
 import uuid
 from io import BytesIO
 
-import SiestaRobot.modules.sql.feds_sql as sql
-from SiestaRobot import (
+import KaguyaRobot.modules.sql.feds_sql as sql
+from KaguyaRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -18,15 +18,15 @@ from SiestaRobot import (
     WOLVES,
     dispatcher,
 )
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.helper_funcs.alternate import send_message
-from SiestaRobot.modules.helper_funcs.chat_status import is_user_admin
-from SiestaRobot.modules.helper_funcs.extraction import (
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot.modules.helper_funcs.alternate import send_message
+from KaguyaRobot.modules.helper_funcs.chat_status import is_user_admin
+from KaguyaRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from SiestaRobot.modules.helper_funcs.string_handling import markdown_parser
+from KaguyaRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -42,7 +42,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, mention_markdown
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.language import gs
 
 # Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too
 # Federation by MrYacha 2018-2019
