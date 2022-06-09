@@ -1,4 +1,4 @@
-from SiestaRobot.modules.disable import (
+from KaguyaRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
@@ -9,11 +9,11 @@ from telegram.ext import (
     InlineQueryHandler,
 )
 from telegram.ext.filters import MessageFilter
-from SiestaRobot import dispatcher as d, LOGGER
+from KaguyaRobot import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
-class SiestaHandler:
+class KaguyaHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -54,7 +54,7 @@ class SiestaHandler:
                         group,
                     )
                 LOGGER.debug(
-                    f"[SIESTACMD] Loaded handler {command} for function {func.__name__} in group {group}"
+                    f"[KAGUYACMD] Loaded handler {command} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -81,7 +81,7 @@ class SiestaHandler:
                         )
                     )
                 LOGGER.debug(
-                    f"[SIESTACMD] Loaded handler {command} for function {func.__name__}"
+                    f"[KAGUYACMD] Loaded handler {command} for function {func.__name__}"
                 )
 
             return func
@@ -110,7 +110,7 @@ class SiestaHandler:
                         MessageHandler(pattern, func, run_async=run_async), group
                     )
                 LOGGER.debug(
-                    f"[SIESTAMSG] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
+                    f"[KAGUYAMSG] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -124,7 +124,7 @@ class SiestaHandler:
                         MessageHandler(pattern, func, run_async=run_async)
                     )
                 LOGGER.debug(
-                    f"[SIESTAMSG] Loaded filter pattern {pattern} for function {func.__name__}"
+                    f"[KAGUYAMSG] Loaded filter pattern {pattern} for function {func.__name__}"
                 )
 
             return func
@@ -139,7 +139,7 @@ class SiestaHandler:
                 )
             )
             LOGGER.debug(
-                f"[SIESTACALLBACK] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}"
+                f"[KAGUYACALLBACK] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}"
             )
             return func
 
@@ -165,14 +165,14 @@ class SiestaHandler:
                 )
             )
             LOGGER.debug(
-                f"[SIESTAINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}"
+                f"[KAGUYAINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}"
             )
             return func
 
         return _inlinequery
 
 
-siestacmd = SiestaHandler(d).command
-siestamsg = SiestaHandler(d).message
-siestacallback = SiestaHandler(d).callbackquery
-siestainline = SiestaHandler(d).inlinequery
+Kaguyacmd = KaguyaHandler(d).command
+Kaguyamsg = KaguyaHandler(d).message
+Kaguyacallback = KaguyaHandler(d).callbackquery
+Kaguyainline = KaguyaHandler(d).inlinequery
