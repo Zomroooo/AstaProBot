@@ -1,12 +1,12 @@
 from random import randint
 
 import requests as r
-from SiestaRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
+from KaguyaRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from KaguyaRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext
 
-# Wallpapers module by @TheRealPhoenix using wall.alphacoders.com
+# Wallpapers module by @Aceladi using wall.alphacoders.com
 
 
 def wall(update: Update, context: CallbackContext):
