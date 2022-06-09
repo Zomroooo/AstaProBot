@@ -1,6 +1,6 @@
 """
 MIT License
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Aceladi
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -19,8 +19,8 @@ SOFTWARE.
 """
 from pyrogram import filters
 
-from SiestaRobot import pbot as app, arq
-from SiestaRobot.utils.errors import capture_err
+from KaguyaRobot import pbot as app, arq
+from KaguyaRobot.utils.errors import capture_err
 
 __mod_name__ = "Reddit"
 
