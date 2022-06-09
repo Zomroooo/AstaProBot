@@ -1,5 +1,4 @@
-# Copyright (c) 2022 Shiinobu Project
-
+# Copyright (c) 2022 TeamNexusX
 from datetime import datetime
 
 from pyrogram import filters
@@ -10,13 +9,13 @@ from pyrogram.types import (
     Message,
 )
 
-from SiestaRobot import pbot as Client
-from SiestaRobot import (
+from KaguyaRobot import pbot as Client
+from KaguyaRobot import (
     OWNER_ID as owner_id,
     OWNER_USERNAME as owner_usn,
     SUPPORT_CHAT as log,
 )
-from SiestaRobot.utils.errors import capture_err
+from KaguyaRobot.utils.errors import capture_err
 
 
 def content(msg: Message) -> [None, str]:
