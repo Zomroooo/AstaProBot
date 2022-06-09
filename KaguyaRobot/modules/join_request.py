@@ -9,12 +9,12 @@ from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 from telegram.utils.helpers import mention_html
 
-from SiestaRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from KaguyaRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
 
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.helper_funcs.decorators import siestacallback
+from KaguyaRobot import dispatcher
+from KaguyaRobot.modules.helper_funcs.decorators import Kaguyacallback
 
-from SiestaRobot.modules.log_channel import loggable
+from KaguyaRobot.modules.log_channel import loggable
 
 
 def chat_join_req(upd: Update, ctx: CallbackContext):
@@ -43,7 +43,7 @@ def chat_join_req(upd: Update, ctx: CallbackContext):
     )
 
 
-@siestacallback(pattern=r"cb_approve=")
+@Kaguyacallback(pattern=r"cb_approve=")
 @user_admin(AdminPerms.CAN_INVITE_USERS, )
 @loggable
 def approve_joinReq(update: Update, context: CallbackContext) -> str:
@@ -76,7 +76,7 @@ def approve_joinReq(update: Update, context: CallbackContext) -> str:
         pass
 
 
-@siestacallback(pattern=r"cb_decline=")
+@Kaguyacallback(pattern=r"cb_decline=")
 @user_admin(AdminPerms.CAN_INVITE_USERS, )
 @loggable
 def decline_joinReq(update: Update, context: CallbackContext) -> str:
