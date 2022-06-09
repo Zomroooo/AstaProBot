@@ -1,13 +1,13 @@
 import random, html
 
-from SiestaRobot import dispatcher
-from SiestaRobot.modules.disable import (
+from KaguyaRobot import dispatcher
+from KaguyaRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from SiestaRobot.modules.sql import afk_sql as sql
-from SiestaRobot.modules.users import get_user_id
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.sql import afk_sql as sql
+from KaguyaRobot.modules.users import get_user_id
+from KaguyaRobot.modules.language import gs
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
@@ -167,7 +167,7 @@ __help__ = """
   brb <reason>: Same as the afk command, but not a command.\n
   When marked as AFK, any mentions will be replied to with a message stating that you're not available!
 """
-__mod_name__ = "Afk​"
+__mod_name__ = "Afk"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
