@@ -1,6 +1,6 @@
 """
 MIT License
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Aceladi
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including witout limitation the rights
@@ -26,9 +26,9 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SiestaRobot import pbot as app
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.services.sections import section
+from KaguyaRobot import pbot as app
+from KaguyaRobot.utils.errors import capture_err
+from KaguyaRobot.services.sections import section
 
 
 async def convert(
