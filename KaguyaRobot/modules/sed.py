@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from SiestaRobot import LOGGER, dispatcher
-from SiestaRobot.modules.disable import DisableAbleMessageHandler
-from SiestaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from KaguyaRobot import LOGGER, dispatcher
+from KaguyaRobot.modules.disable import DisableAbleMessageHandler
+from KaguyaRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
@@ -130,4 +130,3 @@ SED_HANDLER = DisableAbleMessageHandler(
 )
 
 dispatcher.add_handler(SED_HANDLER)
-
