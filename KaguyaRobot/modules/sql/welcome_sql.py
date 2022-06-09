@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from SiestaRobot.modules.helper_funcs.msg_types import Types
-from SiestaRobot.modules.sql import BASE, SESSION
+from KaguyaRobot.modules.helper_funcs.msg_types import Types
+from KaguyaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, Integer
 from sqlalchemy.sql.sqltypes import BigInteger
 
