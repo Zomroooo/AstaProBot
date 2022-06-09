@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from SiestaRobot import (
+from KaguyaRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,18 +13,18 @@ from SiestaRobot import (
     WOLVES,
     dispatcher,
 )
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from KaguyaRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from SiestaRobot.modules.helper_funcs.extraction import extract_user
-from SiestaRobot.modules.log_channel import gloggable
+from KaguyaRobot.modules.helper_funcs.extraction import extract_user
+from KaguyaRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "SiestaRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "KaguyaRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -464,7 +464,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known the Soldier 🧜‍♂:</b>\n"
+    reply = "<b>Known the Soldier 🧜♂:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>",
         parse_mode=ParseMode.HTML,
@@ -506,7 +506,7 @@ def sudolist(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known the Emperor 🧞‍♀:</b>\n"
+    reply = "<b>Known the Emperor 🧞♀:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
