@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from SiestaRobot.modules.sql import SESSION, BASE
+from KaguyaRobot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
