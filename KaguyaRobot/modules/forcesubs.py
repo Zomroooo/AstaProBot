@@ -10,10 +10,10 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from SiestaRobot import DRAGONS as SUDO_USERS
-from SiestaRobot import pbot
-from SiestaRobot.modules.sql import forceSubscribe_sql as sql
-from SiestaRobot.modules.language import gs
+from KaguyaRobot import DRAGONS as SUDO_USERS
+from KaguyaRobot import pbot
+from KaguyaRobot.modules.sql import forceSubscribe_sql as sql
+from KaguyaRobot.modules.language import gs
 
 logging.basicConfig(level=logging.INFO)
 
@@ -110,7 +110,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "😕 **Siesta is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "😕 **Kaguya is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
