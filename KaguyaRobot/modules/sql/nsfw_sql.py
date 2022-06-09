@@ -1,8 +1,8 @@
 import threading
 from sqlalchemy import Column, String
-from SiestaRobot.modules.sql import BASE, SESSION
+from KaguyaRobot.modules.sql import BASE, SESSION
 #   |----------------------------------|
-#   |  Test Module by @EverythingSuckz |
+#   |  Test Module by @Aceladi |
 #   |        Kang with Credits         |
 #   |----------------------------------|
 class NSFWChats(BASE):
