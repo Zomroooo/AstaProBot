@@ -1,7 +1,7 @@
 import os
 
-from SiestaRobot.events import register
-from SiestaRobot import telethn as Client
+from KaguyaRobot.events import register
+from KaguyaRobot import telethn as Client
 from telethon import events, Button, types
 
 TMP_DOWNLOAD_DIRECTORY = "./"
@@ -11,7 +11,7 @@ from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
 
 
-wibu = "SiestaRobot"
+wibu = "KaguyaRobot"
 telegraph = Telegraph()
 data = telegraph.create_account(short_name=wibu)
 auth_url = data["auth_url"]
