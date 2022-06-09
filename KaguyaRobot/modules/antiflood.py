@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from SiestaRobot import TIGERS, WOLVES, dispatcher
-from SiestaRobot.modules.helper_funcs.chat_status import (
+from KaguyaRobot import TIGERS, WOLVES, dispatcher
+from KaguyaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from SiestaRobot.modules.log_channel import loggable
-from SiestaRobot.modules.sql import antiflood_sql as sql
+from KaguyaRobot.modules.log_channel import loggable
+from KaguyaRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -22,11 +22,11 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
-from SiestaRobot.modules.helper_funcs.string_handling import extract_time
-from SiestaRobot.modules.connection import connected
-from SiestaRobot.modules.helper_funcs.alternate import send_message
-from SiestaRobot.modules.sql.approve_sql import is_approved
-from SiestaRobot.modules.language import gs
+from KaguyaRobot.modules.helper_funcs.string_handling import extract_time
+from KaguyaRobot.modules.connection import connected
+from KaguyaRobot.modules.helper_funcs.alternate import send_message
+from KaguyaRobot.modules.sql.approve_sql import is_approved
+from KaguyaRobot.modules.language import gs
 
 FLOOD_GROUP = 3
 
